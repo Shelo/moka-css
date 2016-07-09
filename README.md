@@ -1,4 +1,4 @@
-# mokacss
+# mokaCSS
 mokaCSS Minimalistic CSS (and maybe JS in the future) Framework
 
 Directories:

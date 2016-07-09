@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Roboto", sans-serif;
 }
 body,
 html {
@@ -80,61 +80,58 @@ ul {
   width: 16.66%;
 }
 .col-2 {
-  width: 33.33%;
+  width: 33.32%;
 }
 .col-3 {
-  width: 50%;
+  width: 49.98%;
 }
 .col-4 {
-  width: 66.664%;
+  width: 66.64%;
 }
 .col-5 {
-  width: 83.33%;
+  width: 83.3%;
 }
 .col-6 {
-  width: 100%;
+  width: 99.96%;
 }
 @media all and (max-width: 900px) {
-  .col-1 {
-    width: 33.33%;
+  .med-1 {
+    width: 16.66%;
   }
-  .col-2 {
-    width: 50%;
+  .med-2 {
+    width: 33.32%;
   }
-  .col-3 {
-    width: 83.33%;
+  .med-3 {
+    width: 49.98%;
   }
-  .col-4 {
-    width: 100%;
+  .med-4 {
+    width: 66.64%;
   }
-  .col-5 {
-    width: 100%;
+  .med-5 {
+    width: 83.3%;
   }
-  .col-6 {
-    width: 100%;
-  }
-  .row .col-5 ~ .col-1 {
-    width: 100%;
+  .med-6 {
+    width: 99.96%;
   }
 }
 @media all and (max-width: 600px) {
-  .col-1 {
-    width: 50%;
+  .sml-1 {
+    width: 16.66%;
   }
-  .col-2 {
-    width: 100%;
+  .sml-2 {
+    width: 33.32%;
   }
-  .col-3 {
-    width: 100%;
+  .sml-3 {
+    width: 49.98%;
   }
-  .col-4 {
-    width: 100%;
+  .sml-4 {
+    width: 66.64%;
   }
-  .col-5 {
-    width: 100%;
+  .sml-5 {
+    width: 83.3%;
   }
-  .col-6 {
-    width: 100%;
+  .sml-6 {
+    width: 99.96%;
   }
 }
 .panel {
@@ -240,10 +237,17 @@ button {
   border: 0;
   font-weight: bold;
   color: #f7f7f7;
+  margin: 0 !important;
 }
 button:hover {
   background-color: #81aeda;
   color: #f7f7f7;
+}
+button.expand {
+  width: 100%;
+}
+button.small {
+  padding: 3px 10px;
 }
 button.outline {
   background-color: #ffffff;
@@ -253,9 +257,6 @@ button.outline {
 button.outline:hover {
   background-color: #f7f7f7;
   color: #81aeda;
-}
-button.expand {
-  width: 100%;
 }
 .no-margin {
   margin: 0;
