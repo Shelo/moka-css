@@ -5,7 +5,7 @@
 @keyframes checked {
   0% {
     transform: rotate(0deg);
-    border-radius: 3px;
+    .border-radius();
     background-color: transparent;
   }
   100% {
@@ -23,7 +23,7 @@
   }
   100% {
     transform: rotate(0deg);
-    border-radius: 3px;
+    .border-radius();
     background-color: transparent;
   }
 }
@@ -84,7 +84,7 @@ input[type="checkbox"]:hover {
   outline: none;
 }
 
-input[type="checkbox"]:checked:after{
+input[type="checkbox"]:checked:after {
   position: absolute;
   font-family: FontAwesome;
   content: "\f00c";
@@ -101,6 +101,7 @@ input[type="checkbox"] + label {
   float: left;
 }
 
+// Button
 button {
   background-color: @primary-color;
   .border-radius();
@@ -108,24 +109,29 @@ button {
   border: 0;
   font-weight: bold;
   color: @text-color-light;
+  margin: 0 !important;
 
   &:hover {
     background-color: @primary-color-dark;
     color: @text-color-light;
   }
-}
 
-button.outline {
-  background-color: @background-color-light;
-  border: 3px @primary-color solid;
-  color: @primary-color;
-}
+  &.expand {
+    width: 100%;
+  }
 
-button.outline:hover {
-  background-color: @background-color;
-  color: @primary-color-dark;
-}
+  &.small {
+    padding: 3px 10px;
+  }
 
-button.expand {
-  width: 100%;
+  &.outline {
+    background-color: @background-color-light;
+    border: 3px @primary-color solid;
+    color: @primary-color;
+
+    &:hover {
+      background-color: @background-color;
+      color: @primary-color-dark;
+    }
+  }
 }
