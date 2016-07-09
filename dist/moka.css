@@ -273,6 +273,42 @@ button.outline:hover {
 .text-left {
   text-align: left;
 }
+.med-down-visible {
+  display: none;
+}
+.sml-only-visible {
+  display: none;
+}
+.med-up-visible {
+  display: none;
+}
+@media all and (min-width: 600px) {
+  .med-up-visible {
+    display: initial;
+  }
+}
+@media all and (max-width: 900px) {
+  .med-hide {
+    display: none;
+  }
+  .med-down-visible {
+    display: initial;
+  }
+  .lrg-only-visible {
+    display: none;
+  }
+}
+@media all and (max-width: 600px) {
+  .sml-hide {
+    display: none;
+  }
+  .sml-only-visible {
+    display: initial;
+  }
+  .lrg-only-visible {
+    display: none;
+  }
+}
 .message {
   padding: 10px;
   border-radius: 3px;
