@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif !important;
+}
+body,
+html {
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #999;
+  text-decoration: none;
+  border-bottom: 1px #ccc solid;
+}
+a:hover {
+  color: #8baed1;
+  border-bottom-color: #8baed1;
+}
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  width: 16.66%;
+  padding: 4px 8px;
+}
+@media all and (min-width: 550px) {
+  [class*='col-'].col-center {
+    float: none;
+    margin: auto;
+  }
+}
+.col-1 {
+  width: 16.66%;
+}
+.col-2 {
+  width: 33.33%;
+}
+.col-3 {
+  width: 50%;
+}
+.col-4 {
+  width: 66.664%;
+}
+.col-5 {
+  width: 83.33%;
+}
+.col-6 {
+  width: 100%;
+}
+@media all and (max-width: 900px) {
+  .col-1 {
+    width: 33.33%;
+  }
+  .col-2 {
+    width: 50%;
+  }
+  .col-3 {
+    width: 83.33%;
+  }
+  .col-4 {
+    width: 100%;
+  }
+  .col-5 {
+    width: 100%;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .row .col-5 ~ .col-1 {
+    width: 100%;
+  }
+}
+@media all and (max-width: 600px) {
+  .col-1 {
+    width: 50%;
+  }
+  .col-2 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+  .col-4 {
+    width: 100%;
+  }
+  .col-5 {
+    width: 100%;
+  }
+  .col-6 {
+    width: 100%;
+  }
+}
+.panel {
+  padding: 16px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px #cccccc;
+}
+input,
+button,
+textarea {
+  margin-bottom: 16px;
+  outline: none;
+  margin-top: 8px;
+}
+textarea {
+  resize: vertical;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  border-radius: 3px;
+  border: 1px #e2e2e2 solid;
+  padding: 10px;
+  width: 100%;
+  background-color: #ffffff;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
+  border: 1px #8baed1 solid;
+}
+button {
+  background-color: #95bbe0;
+  border-radius: 3px;
+  padding: 10px;
+  border: 0;
+  font-weight: bold;
+  color: #f7f7f7;
+}
+button:hover {
+  background-color: #8baed1;
+  color: #ffffff;
+}
+button.outline {
+  background-color: #ffffff;
+  border: 3px #95bbe0 solid;
+  color: #95bbe0;
+}
+button.outline:hover {
+  background-color: #f7f7f7;
+  color: #8baed1;
+}
+button.expand {
+  width: 100%;
+}
+.no-margin {
+  margin: 0;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+  margin-bottom: 0;
+}
+.radius {
+  border-radius: 3px;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.message {
+  padding: 10px;
+  border-radius: 3px;
+  margin: 15px 0;
+  text-align: center;
+  background-color: #95bbe0;
+  color: #ffffff;
+}
+.message.error {
+  background-color: #e04136;
+  color: #ffffff;
+}
+.message.warning {
+  background-color: #fff2af;
+  color: #333;
+}
+.message.success {
+  background-color: #95ca95;
+  color: #fff;
+}
