@@ -203,6 +203,7 @@ input[type="checkbox"] {
   border-radius: 3px;
   transform: rotate(0deg);
   font-size: 11px;
+  top: -1.5px;
   padding: 9px;
   margin-right: 10px;
   float: left;
