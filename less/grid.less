@@ -1,6 +1,8 @@
+@import "theme";
+
 .row {
   width: 100%;
-  max-width: 1200px;
+  max-width: @max-width;
   margin: auto;
 }
 
@@ -18,7 +20,7 @@
   padding: 4px 8px;
 }
 
-@media all and (min-width: 550px) {
+@media all and (min-width: @small-max-width) {
   [class*='col-'].col-center {
     float: none;
     margin: auto;
@@ -49,7 +51,7 @@
   width: 100%;
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: @medium-max-width) {
   .col-1 {
     width: 33.33%;
   }
@@ -79,7 +81,7 @@
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: @small-max-width) {
   .col-1 {
     width: 50%;
   }

@@ -1,8 +1,9 @@
 @import "theme";
+@import "mixins";
 
 .panel {
   padding: 16px;
   border-radius: 3px;
-  background-color: #ffffff;
-  box-shadow: 1px 1px 1px #cccccc;
+  background-color: @background-color-light;
+  .box-shadow(1px, 1px, 1px, 0.1);
 }

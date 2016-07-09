@@ -1,0 +1,19 @@
+@import "theme";
+
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+  -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+  box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+.border-radius (@radius: @radius) {
+  border-radius: @radius;
+}
+
+.border (@thickness: 1px, @color: @border-color, @style: solid) {
+  border: @thickness @color @style;
+}
+
+.auto-text-color (@base-color: @primary-color) {
+  color: contrast(@base-color, @text-color, @text-color-light, 43%);
+}

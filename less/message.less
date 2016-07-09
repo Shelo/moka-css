@@ -1,26 +1,27 @@
 @import "theme";
+@import "mixins";
 
 .message {
   padding: 10px;
-  border-radius: 3px;
+  .border-radius();
   margin: 15px 0;
   text-align: center;
 
   background-color: @primary-color;
-  color: #ffffff;
+  color: @text-color-light;
 }
 
 .message.error {
   background-color: @error-color;
-  color: #ffffff;
+  color: contrast(@error-color, @text-color, @text-color-light);
 }
 
 .message.warning {
   background-color: @warning-color;
-  color: #333;
+  color: contrast(@warning-color, @text-color, @text-color-light);
 }
 
 .message.success {
   background-color: @success-color;
-  color: #fff;
+  color: contrast(@success-color, @text-color, @text-color-light);
 }

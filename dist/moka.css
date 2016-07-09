@@ -7,6 +7,7 @@ html {
   background-color: #f7f7f7;
   margin: 0;
   padding: 0;
+  color: #333333;
 }
 a {
   color: #999;
@@ -14,8 +15,8 @@ a {
   border-bottom: 1px #ccc solid;
 }
 a:hover {
-  color: #8baed1;
-  border-bottom-color: #8baed1;
+  color: #81aeda;
+  border-bottom-color: #81aeda;
 }
 .row {
   width: 100%;
@@ -34,7 +35,7 @@ a:hover {
   width: 16.66%;
   padding: 4px 8px;
 }
-@media all and (min-width: 550px) {
+@media all and (min-width: 600px) {
   [class*='col-'].col-center {
     float: none;
     margin: auto;
@@ -105,7 +106,9 @@ a:hover {
   padding: 16px;
   border-radius: 3px;
   background-color: #ffffff;
-  box-shadow: 1px 1px 1px #cccccc;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 input,
 button,
@@ -130,7 +133,7 @@ select {
 input[type=text]:focus,
 input[type=password]:focus,
 textarea:focus {
-  border: 1px #8baed1 solid;
+  border: 1px #81aeda solid;
 }
 button {
   background-color: #95bbe0;
@@ -141,8 +144,8 @@ button {
   color: #f7f7f7;
 }
 button:hover {
-  background-color: #8baed1;
-  color: #ffffff;
+  background-color: #81aeda;
+  color: #f7f7f7;
 }
 button.outline {
   background-color: #ffffff;
@@ -151,7 +154,7 @@ button.outline {
 }
 button.outline:hover {
   background-color: #f7f7f7;
-  color: #8baed1;
+  color: #81aeda;
 }
 button.expand {
   width: 100%;
@@ -202,17 +205,17 @@ h6:last-child {
   margin: 15px 0;
   text-align: center;
   background-color: #95bbe0;
-  color: #ffffff;
+  color: #f7f7f7;
 }
 .message.error {
   background-color: #e04136;
-  color: #ffffff;
+  color: #f7f7f7;
 }
 .message.warning {
   background-color: #fff2af;
-  color: #333;
+  color: #333333;
 }
 .message.success {
   background-color: #95ca95;
-  color: #fff;
+  color: #333333;
 }
