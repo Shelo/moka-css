@@ -41,8 +41,9 @@ textarea {
   resize: vertical;
 }
 
-input[type=text],
-input[type=password],
+input[type="text"],
+input[type="password"],
+input[type="email"],
 textarea,
 select {
   .border-radius();
@@ -52,8 +53,9 @@ select {
   background-color: @background-color-light;
 }
 
-input[type=text]:focus,
-input[type=password]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
 textarea:focus {
   .border(@color: @primary-color-dark);
 }
@@ -134,4 +136,43 @@ button {
       color: @primary-color-dark;
     }
   }
+}
+
+.display {
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: @radius @radius 0 0;
+  border: 1px @primary-color solid;
+  border-bottom: 0;
+  padding: 8px;
+  margin-top: 8px;
+
+  & + input {
+    margin-top: 0;
+    border-radius: 0 0 @radius @radius;
+  }
+
+  &.error {
+    border-color: @error-color;
+    background-color: lighten(@error-color, 40%);
+
+    & + input {
+      border-color: @error-color;
+    }
+  }
+
+  &.warning {
+    border-color: @warning-color;
+    background-color: lighten(@warning-color, 10%);
+
+    & + input {
+      border-color: @warning-color;
+    }
+  }
+
+  &.success {
+    border-color: @success-color;
+    background-color: lighten(@success-color, 40%);
+  }
+
 }

@@ -55,7 +55,7 @@ ul {
 }
 .row {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
 }
 .row:before,
@@ -180,8 +180,9 @@ label {
 textarea {
   resize: vertical;
 }
-input[type=text],
-input[type=password],
+input[type="text"],
+input[type="password"],
+input[type="email"],
 textarea,
 select {
   border-radius: 3px;
@@ -190,8 +191,9 @@ select {
   width: 100%;
   background-color: #ffffff;
 }
-input[type=text]:focus,
-input[type=password]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
 textarea:focus {
   border: 1px #81aeda solid;
 }
@@ -260,6 +262,37 @@ button.outline {
 button.outline:hover {
   background-color: #f7f7f7;
   color: #81aeda;
+}
+.display {
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 3px 3px 0 0;
+  border: 1px #95bbe0 solid;
+  border-bottom: 0;
+  padding: 8px;
+  margin-top: 8px;
+}
+.display + input {
+  margin-top: 0;
+  border-radius: 0 0 3px 3px;
+}
+.display.error {
+  border-color: #e04136;
+  background-color: #fbe8e7;
+}
+.display.error + input {
+  border-color: #e04136;
+}
+.display.warning {
+  border-color: #fff2af;
+  background-color: #fffae2;
+}
+.display.warning + input {
+  border-color: #fff2af;
+}
+.display.success {
+  border-color: #95ca95;
+  background-color: #ffffff;
 }
 .no-margin {
   margin: 0;
