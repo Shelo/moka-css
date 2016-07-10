@@ -53,22 +53,37 @@ ul {
   margin: 0;
   list-style: none;
 }
-.row {
-  width: 100%;
-  max-width: 1100px;
-  margin: auto;
+p:first-child {
+  margin-top: 0;
 }
-.row:before,
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+p:last-child {
+  margin-bottom: 0;
 }
 [class*='col-'] {
   float: left;
   min-height: 1px;
   width: 16.66%;
   padding: 4px 8px;
+}
+[class*='col-']:first-child {
+  padding-left: 0;
+}
+[class*='col-']:last-child {
+  padding-right: 0;
+}
+.row {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+.row.collapse [class*='col-'] {
+  padding: 0;
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 @media all and (min-width: 600px) {
   [class*='col-'].col-center {
@@ -141,6 +156,10 @@ ul {
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+}
+.panel:first-child {
+  margin-top: 0;
 }
 .box {
   padding: 8px;
@@ -169,6 +188,10 @@ ul {
     background-color: transparent;
   }
 }
+form {
+  margin: 0;
+  padding: 0;
+}
 input,
 button,
 textarea,
@@ -176,6 +199,12 @@ label {
   margin-bottom: 16px;
   outline: none;
   margin-top: 8px;
+}
+input:last-child,
+button:last-child,
+textarea:last-child,
+label:last-child {
+  margin-bottom: 0;
 }
 textarea {
   resize: vertical;
@@ -238,11 +267,10 @@ input[type="checkbox"] + label {
 button {
   background-color: #AC8B6F;
   border-radius: 3px;
-  padding: 10px;
+  padding: 11px;
   border: 0;
   font-weight: bold;
   color: #f7f7f7;
-  margin: 0 !important;
 }
 button:hover {
   background-color: #a37e5f;
@@ -327,6 +355,9 @@ button.outline:hover {
 .text-left {
   text-align: left;
 }
+.text-justify {
+  text-align: justify;
+}
 .med-down-visible {
   display: none;
 }
@@ -362,6 +393,18 @@ button.outline:hover {
   .lrg-only-visible {
     display: none;
   }
+}
+ul.side-nav {
+  margin: 8px 16px;
+}
+ul.side-nav li {
+  padding: 4px 0;
+}
+ul.side-nav li:first-child {
+  padding-top: 0;
+}
+ul.side-nav li:last-child {
+  padding-bottom: 0;
 }
 .message {
   padding: 10px;

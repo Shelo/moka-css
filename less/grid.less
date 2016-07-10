@@ -6,10 +6,29 @@
   width: @size * @column-width;
 }
 
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  width: @column-width;
+  padding: 4px 8px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
 .row {
   width: 100%;
   max-width: @max-width;
   margin: auto;
+
+  &.collapse [class*='col-'] {
+    padding: 0;
+  }
 }
 
 .row:before,
@@ -17,13 +36,6 @@
   content: "";
   display: table;
   clear: both;
-}
-
-[class*='col-'] {
-  float: left;
-  min-height: 1px;
-  width: @column-width;
-  padding: 4px 8px;
 }
 
 @media all and (min-width: @small-max-width) {
