@@ -7,7 +7,7 @@
     <title>MokaCSS</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="dist/vendor/normalize.css">
     <link rel="stylesheet" href="dist/moka.css">
 </head>
 
@@ -145,14 +145,25 @@
         <div class="panel">
             <label>
                 Text input <a href="#">What?</a>
-                <div class="display warning">.display.warning</div>
                 <input type="text" placeholder="Hello">
             </label>
 
             <label>
-                Email
+                Information display
+                <div class="display">.display</div>
+                <input type="text" placeholder="Test">
+            </label>
+
+            <label>
+                Error display
                 <div class="display error">.display.error</div>
-                <input type="email" placeholder="Test">
+                <input type="email" placeholder="Email">
+            </label>
+
+            <label>
+                Success display
+                <div class="display success">.display.success</div>
+                <input type="password" placeholder="Password">
             </label>
 
             <label>
