@@ -164,6 +164,20 @@ p:last-child {
 .box {
   padding: 8px;
 }
+ul.side-nav {
+  margin: 8px 4px;
+}
+ul.side-nav li a {
+  display: block;
+  padding: 8px 8px;
+  border: 0;
+  color: #a37e5f;
+  transition: 0.1s;
+}
+ul.side-nav li a:hover {
+  color: #AC8B6F;
+  background-color: #f9f2e9;
+}
 @keyframes checked {
   0% {
     transform: rotate(0deg);
@@ -393,18 +407,6 @@ button.outline:hover {
   .lrg-only-visible {
     display: none;
   }
-}
-ul.side-nav {
-  margin: 8px 16px;
-}
-ul.side-nav li {
-  padding: 4px 0;
-}
-ul.side-nav li:first-child {
-  padding-top: 0;
-}
-ul.side-nav li:last-child {
-  padding-bottom: 0;
 }
 .message {
   padding: 10px;

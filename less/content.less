@@ -16,3 +16,25 @@
 .box {
   padding: 8px;
 }
+
+ul {
+  &.side-nav {
+    margin: 8px 4px;
+
+    li {
+      a {
+        display: block;
+        padding: 8px 8px;
+
+        border: 0;
+        color: @primary-color-dark;
+        transition: 0.1s;
+
+        &:hover {
+          color: @primary-color;
+          background-color: lighten(@secondary-color, 11%);
+        }
+      }
+    }
+  }
+}
